@@ -3,9 +3,11 @@ scripts realizados en bash para uso personal.
 
 ## avrgrab
 Script para grabar microcontroladores AVR en linux mediante avrdude. Uso:
+
 ~ $ avrgrab ARCHIVO MCU PROGRAMADOR
 
 donde:
+
 ARCHIVO-->	Es el nombre del archivo con extensión .c (ARCHIVO.c). Solo se escribe
 			el nombre del archivo sin la extensión.
 
