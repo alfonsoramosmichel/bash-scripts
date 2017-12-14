@@ -1,0 +1,11 @@
+#!/bin/bash
+
+# Programa para grabar microcontroladores AVR mediante avrdude
+# avrgrab ARCHIVO MCU PROGRAMADOR
+
+avr-gcc -g -Os -mmcu=$2 -c $1.c
+avr-gcc -g -mmcu=$2 -o $1.elf $1.o
+avr-objcopy -j .text -j .data -O ihex $1.elf $1.hex
+echo "Grabando en MCU"
+avrdude -c $3 -P usb -p $2 -U flash:w:$1.hex:i
+echo "Saludos y adios"
