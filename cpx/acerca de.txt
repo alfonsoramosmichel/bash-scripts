@@ -1,0 +1,7 @@
+cpx es un script para copiar cualquier script bash a la carpeta /usr/local/bin
+
+USO
+>> cpx archivo
+
+Una vez que sea ejecutado, pedirá la contraseña de superusuario, pues hace uso de
+sudo

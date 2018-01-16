@@ -1,0 +1,10 @@
+fueralatex es un script que permite eliminar todos los archivos:
+*.aux
+*.log
+*.synctex.gz
+*.toc
+
+que quedan durante las compilaciones de archivos LaTeX.
+
+USO
+>> fueralatex
